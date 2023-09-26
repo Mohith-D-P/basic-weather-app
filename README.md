@@ -22,10 +22,10 @@ Make sure you have the following software installed:
 
 ### Installation
 
-1. Clone the repository:
+1. Clone the repository using this link:
 
-   ```sh
-   git clone https://github.com/Mohith-D-P/basic-weather-app
+
+ https://github.com/Mohith-D-P/basic-weather-app
 
 # navigate to project folder (locally)
 
