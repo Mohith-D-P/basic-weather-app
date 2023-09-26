@@ -1,0 +1,21 @@
+/* App.css */
+.App {
+    background-image: url('../public/images/background2.jpg');
+    background-size: cover; /* Ensure the background image covers the entire element */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Prevent background from scrolling with content */
+    background-position: center center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Allow columns to wrap to the next line on small screens */
+    justify-content: space-evenly; /* Spread columns evenly in the available space */
+}
+
+.column {
+    flex: 1;
+    min-width: 0;
+    margin: 0 2%; /* Add horizontal margin for spacing on both sides of the columns */
+    max-width: 45%; /* Limit the maximum width of columns to prevent them from becoming too wide */
+}

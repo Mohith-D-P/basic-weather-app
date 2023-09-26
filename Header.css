@@ -1,0 +1,37 @@
+.header-container {
+  text-align: center;
+  padding: 20px; /* Reduce padding for smaller screens */
+  border-radius: 1px;
+  color: white;
+  font-weight: bold;
+  position: relative;
+}
+
+.header-container h1 {
+  font-size: 32px; /* Reduce font size for smaller screens */
+  margin: 0;
+  margin-bottom: 20px; /* Reduce margin for spacing */
+}
+
+.greetings {
+  color: white;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.greetings h3 {
+  margin: 0;
+  animation: moveLeft 15s linear infinite;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .header-container {
+    padding: 10px; /* Further reduce padding for smaller screens */
+  }
+  .header-container h1 {
+    font-size: 24px; /* Further reduce font size for smaller screens */
+    margin-bottom: 10px; /* Further reduce margin for spacing */
+  }
+}

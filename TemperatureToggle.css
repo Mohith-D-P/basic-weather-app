@@ -1,0 +1,43 @@
+/* TemperatureToggle.css */
+.temperature-toggle {
+  display: flex;
+  justify-content: space-between;
+  width: 35%;
+  margin-left: 75px;
+}
+
+.temperature-toggle label {
+  color: white;
+  display: flex;
+  font-weight: 700;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Background and color transition on hover */
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  padding: 10px 10px;
+  margin: 10px; /* Add margin for spacing */
+  margin-left: 78px;
+}
+
+.temperature-toggle label:hover {
+  background-color: #007bff; /* Background color on hover */
+  color: #fff; /* Text color on hover */
+}
+
+.temperature-toggle input[type="radio"] {
+  display: none; /* Hide the radio buttons */
+}
+
+.temperature-toggle input[type="radio"]:checked + label {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .temperature-toggle {
+    width: 100%; /* Take full width on smaller screens */
+    justify-content: space-around; /* Adjust alignment for smaller screens */
+  }
+}

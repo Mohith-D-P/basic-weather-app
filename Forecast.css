@@ -1,0 +1,55 @@
+/* Forecast.css */
+.forecast {
+  margin-top: 20px;
+  padding: 2.5%;
+  font-size: larger;
+  animation: moveLeft 15s linear infinite; /* Animation for moving left */
+  cursor: pointer; /* Add cursor pointer */
+}
+
+.forecast h2 {
+  font-size: 26px;
+  font-weight: bold;
+  color: white;
+  margin: 0 0 20px;
+  text-align: center;
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(80%); /* Start position */
+  }
+  100% {
+    transform: translateX(-100%); /* End position (left) */
+  }
+}
+
+.forecast-boxes {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  color: white;
+  font-weight: 700;
+}
+
+/* Pause animation on hover and resume on mouse out */
+.forecast:hover {
+  animation-play-state: paused;
+}
+
+.forecast:hover .forecast-boxes {
+  animation-play-state: paused;
+}
+
+.forecast-boxes:hover {
+  animation-play-state: running;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .forecast {
+    max-width: 100%;
+    animation: none; /* Remove the animation on smaller screens */
+    cursor: default; /* Reset cursor for smaller screens */
+  }
+}
